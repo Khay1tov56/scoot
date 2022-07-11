@@ -107,6 +107,10 @@ ul {
   align-items: center;
 }
 
+.header-logo{
+  color: var(--title-color);
+}
+
 .site-logo__img{
   width: 108px;
   height: 29px;
@@ -395,3 +399,115 @@ ul {
 .item__img--coming{
   box-shadow: -500px 0 0 0 #E5ECF4;
 }
+
+/* SITE FOOTER start */
+
+.site-footer__top{
+  padding: 102px 0;
+  background-image: url("../images/footer-bgi.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.site-footer__top-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-footer__title-box{
+  width: 415px;
+}
+
+.site-footer__title{
+  margin: 0;
+  font-weight: var(--font-weight);
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: var(--white-color);
+}
+
+.install__link{
+  position: relative;
+  display: inline-block;
+  padding: 8px 15px 9px 52px;
+  background-color: #E5ECF4;
+  border-radius: 4px;
+}
+
+.install__link::before{
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  display: inline-block;
+  width: 24px;
+  height: 28px;
+  content: "";
+  background-image: url("../images/apple-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.install__link:nth-child(2)::before{
+  background-image: url("../images/play-market-icon.svg");
+}
+
+.install__link--appstore{
+  margin-right: 18px;
+}
+
+.install__top-strong{
+  display: block;
+  font-weight: var(--font-weight);
+  font-size: 10px;
+  line-height: var(--font-size);
+  letter-spacing: -0.446429px;
+  color: var(--title-color);
+}
+
+.install__bottom-strong{
+  display: block;
+  font-weight: var(--font-weight);
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.892857px;
+  color: var(--title-color);
+}
+
+.site-footer__bottom{
+  padding-top: 35px;
+  padding-bottom: 33px;
+  background-color: #333A44;
+}
+
+.site-footer__bottom-inner{
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo{
+  color: var(--white-color);
+}
+
+.site-footer__social{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.site-footer__social-link:not(:last-child){
+  margin-right: 24px;
+}
+
+.site-footer__social-link{
+  display: inline-block;
+  color: #FCB72B;
+  transition: all 0.5s ease;
+}
+
+.site-footer__social-link:hover{
+  color: #E5ECF4;
+  transition: all 0.5s ease;
+}
+
