@@ -216,3 +216,75 @@ ul {
   background-repeat: no-repeat;
   content: "";
 }
+
+/* FEATURES SECTION START */
+
+.features{
+  padding-top: 160px;
+  padding-bottom: 200px;
+}
+
+.faetures__list{
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+}
+
+.faetures__list::before{
+  position: absolute;
+  top: 41px;
+  left: -14%;
+  z-index: -1;
+  width: 974px;
+  height: 15px;
+  background-color: #E5ECF4;
+  content: "";
+}
+
+.features__item{
+  width: 350px;
+}
+
+.features__item::before{
+  display: block;
+  width: 96px;
+  height: 96px;
+  margin-bottom: 40px;
+  content: "";
+  background-image: url("../images/locate.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.features__item:nth-child(2)::before{
+  background-image: url("../images/scooter.svg");
+}
+
+.features__item:nth-child(3)::before{
+  background-image: url("../images/ride.svg");
+}
+
+.features__item:not(:last-child){
+  margin-right: 30px;
+}
+
+.features__title{
+  margin-bottom: 27px;
+  font-weight: var(--font-weight);
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: var(--title-color);
+}
+
+.features__text{
+  margin: 0;
+  font-family: var(--second-font-family);
+  font-weight: 400;
+  font-size: var(--font-size);
+  line-height: 25px;
+  color: var(--text-color);
+}
+
