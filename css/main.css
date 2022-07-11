@@ -5,6 +5,7 @@
   --title-color : #495567;
   --white-color : #FFF;
   --link-bg-color : #FCB72B;
+  --second-font-family: "Lexend Deca", "Arial", sans-serif;
   --font-size: 15px;
   --font-weight: 700;
 }
@@ -22,6 +23,14 @@
   font-weight: 700;
   src: url("../fonts/space-mono-v11-latin-700.woff2") format("woff2"), 
        url("../fonts/space-mono-v11-latin-700.woff") format("woff"); 
+}
+
+@font-face {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lexend-deca-v16-latin-regular.woff2") format("woff2"), 
+       url("../fonts/lexend-deca-v16-latin-regular.woff") format("woff"); 
 }
 
 /* GENERAL */
@@ -127,6 +136,7 @@ ul {
 }
 
 .get-link{
+  display: inline-block;
   padding: 11px 36px;
   margin-left: auto;
   font-weight: var(--font-weight);
@@ -142,4 +152,67 @@ ul {
   color: var(--link-bg-color);
   background-color: var(--white-color);
   transition: all 0.5s ease;
+}
+
+/* INTRO SECTION START */
+
+.intro{
+  padding: 153px 0;
+  background-image: url("../images/hero-circles.svg"), url("../images/hero-bgi.png");
+  background-size: 234px 62px, cover;
+  background-repeat: no-repeat;
+  background-position: calc(50% + 631px) calc(50% + 140px), center;
+}
+
+.intro__inner{
+  width: 500px;
+}
+
+.intro__title{
+  margin-bottom: 40px;
+  font-weight: var(--font-weight);
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: var(--white-color);
+}
+
+.intro__text-box{
+  width: 405px;
+  margin-left: 95px;
+}
+
+.intro__text{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  margin-bottom: 40px;
+  font-family: var(--second-font-family);
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.intro__text::before{
+  position: absolute;
+  top: 43%;
+  left: -64%;
+  z-index: 3;
+  width: 203px;
+  height: 15px;
+  background-color: var(--link-bg-color);
+  content: "";
+}
+
+.intro__text::after{
+  position: absolute;
+  top: 43%;
+  right: -118%;
+  z-index: 3;
+  width: 447px;
+  height: 138px;
+  background-image: url("../images/hero-arrow.svg");
+  background-size: 447px 138px;
+  background-repeat: no-repeat;
+  content: "";
 }
