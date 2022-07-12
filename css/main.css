@@ -171,6 +171,7 @@ ul {
 
 .intro__inner{
   width: 500px;
+  color: #a5a5a5;
 }
 
 .intro__title{
@@ -404,9 +405,11 @@ ul {
 
 .site-footer__top{
   padding: 102px 0;
-  background-image: url("../images/footer-bgi.svg");
+  background-color: #495567;
+  background-image: url("../images/footer-circles.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 1153px 347px;
+  background-position: calc(50% + 278px) 143px;
 }
 
 .site-footer__top-inner{
@@ -875,4 +878,96 @@ font-size: 15px;
 line-height: 25px;
 color: #495567;
 
+}
+
+/* LOCATION PAGE START */
+
+.location{
+  padding-bottom: 120px;
+}
+
+.location__top-box{
+  margin-bottom: 100px;
+  padding: 72px 0;
+  background-image: url("../images/location-bgi.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.location__top-inner{
+  position: relative;
+  z-index: 1;
+}
+
+.location__top-inner::after{
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  right: -14.5%;
+  width: 234px;
+  height: 62px;
+  content: "";
+  background-image: url("../images/hero-circles.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.location__title{
+  margin: 0;
+  font-weight: var(--font-weight);
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: var(--white-color);
+}
+
+.location__bottom-box{
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.location__title-box{
+  width: 351px;
+}
+
+.location__heading{
+  margin: 0;
+  font-weight: var(--font-weight);
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: var(--title-color);
+}
+
+.location__text-box{
+  margin-right: auto;
+  margin-left: 30px;
+  width: 445px;
+}
+
+.location__text{
+  margin: 0;
+  font-family: var(--second-font-family);
+  font-size: var(--font-size);
+  line-height: 25px;
+  color: var(--text-color);
+}
+
+.location__link{
+  display: inline-block;
+  padding: 11px 41px;
+  font-weight: var(--font-weight);
+  font-size: var(--font-size);
+  line-height: 25px;
+  color: var(--white-color);
+  background-color: var(--link-bg-color);
+  border: 3px solid var(--link-bg-color);
+  transition: all 0.5s ease;
+}
+
+.location__link:hover{
+  color: var(--link-bg-color);
+  background-color: var(--white-color);
+  transition: all 0.5s ease;
 }
